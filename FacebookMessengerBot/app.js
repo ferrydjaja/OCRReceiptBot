@@ -76,7 +76,7 @@ const ocr = new OCR("SAP_LEONARDO_TOKEN");
 // set the Facebook Messenger Token
 const token = "FACEBOOK_TOKEN"
 // Set the Cloud Foundry OCR App URL with base authentication type
-const ocrhost = "appnode-demo-pxxxxxtrial.cfapps.eu10.hana.ondemand.com";
+const ocrhost = "appnode-demo-xxxxtrial.cfapps.eu10.hana.ondemand.com";
 const uid = "SAP_CLOUDFOUNDRY_ID";
 const pwd = "SAP_CLOUDFOUNDRY_PASSWORD";
 
@@ -283,15 +283,15 @@ app.post('/webhook/', function (req, res) {
 
 				let ArrayData = [];
 				ArrayData.push({
-					'title': 'Hi! My name is OCRBot ðŸ». I can OCR your receipt image.',
+					'title': 'Hi! My name is OCRBot 🐻. I can OCR your receipt image.',
 					'subtitle': 'Choose one of the OCR option, using SAP Leonardo or Tesseract.',
 					'buttons':[{
 						'type':'postback',
-						'title':'ðŸ§¾ SAP Leonardo',
+						'title':'🧾 SAP Leonardo',
 						'payload': 'SAP'
 					},{
 						'type':'postback',
-						'title':'ðŸ§¾ Tesseract',
+						'title':'🧾 Tesseract',
 						'payload': 'TSR'
 					}]              
 				});
@@ -341,17 +341,17 @@ app.post('/webhook/', function (req, res) {
 		//Sticker
 		let sticker = false;
 		if (event.message && event.message.sticker_id == '369239383222810') {
-			sendTextMessage(sender, 'ðŸ‘', function(returnValue) {
+			sendTextMessage(sender, '👍', function(returnValue) {
 			});
 			sticker = true;
 		}
 		if (event.message && event.message.sticker_id == '369239343222814') {
-			sendTextMessage(sender, 'ðŸ‘', function(returnValue) {
+			sendTextMessage(sender, '👍', function(returnValue) {
 			});
 			sticker = true;
 		}
 		if (event.message && event.message.sticker_id == '369239263222822' ) {
-			sendTextMessage(sender, 'ðŸ‘', function(returnValue) {
+			sendTextMessage(sender, '👍', function(returnValue) {
 			});
 			sticker = true;
 		}
