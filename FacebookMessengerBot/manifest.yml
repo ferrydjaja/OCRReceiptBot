@@ -1,0 +1,5 @@
+---
+applications:
+- name: ScanReceiptBotApp
+  memory: 128m
+  instances: 1
